@@ -1,0 +1,50 @@
+@font-face {
+    font-family: 'ISawAGhost'; /* Provide a name for your font */
+    src: url('/static/fonts/iknowaghost.ttf') format('truetype'); /* Adjust the path */
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'HallowedGrounds'; /* Provide a name for your font */
+    src: url('/static/fonts/HallowedGrounds.otf') format('truetype'); /* Adjust the path */
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'ISawAGhost', sans-serif;
+    background-image: url(/static/background.gif);
+    background-size: cover;
+    
+}
+
+#output {
+    display: inline-block;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    color: rgb(155, 0, 0);
+    font-size: 50px;
+
+    background-color: rgba(180, 170, 150,0.6); 
+    text-shadow: 0 0 40px rgb(0, 0, 0);
+}
+
+button {
+    display: block; /* Make the button a block element */
+    padding: 10px 20px; /* Add some padding for better appearance */
+    margin: 30px auto;
+    font-family: 'HallowedGrounds', sans-serif;
+    font-size: 30px;
+    background-color: rgb(180, 170, 150);
+    height: 80px;
+}
+
+button, #output {
+    vertical-align: middle;
+}

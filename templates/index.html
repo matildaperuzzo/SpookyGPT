@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Spooky Fact Generator</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+    <style>
+        .button-container {
+            display: flex;
+            justify-content: space-around; /* Adjust as needed */
+            width: 500px; /* Set a fixed width */
+            margin: 0 auto; /* Center the button container */
+        }
+
+        .button-container button {
+            margin: 5px; /* Add some spacing between buttons */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="button-container">
+            <button onclick="getSpookyFact()">Get spooky fact</button>
+            <button onclick="getDeath()">How will I die?</button>
+        </div>
+        <div id="output"></div>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
